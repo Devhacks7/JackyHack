@@ -1,0 +1,101 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 300px;
+  background-color: white;
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 8px 16px rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  border-radius: 4px;
+  box-shadow: 3px 3px 2px black;
+}
+
+.logo img {
+  width: 150px;/* Set width for the logo */
+ 
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 15px; /* Space between buttons */
+  margin-bottom: 20px;
+ 
+}
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px bold black;
+  background-color: rgb(34, 34, 34);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 150px; /* Make the buttons full-width
+ */
+  text-align: center;
+  align-self: center;
+  box-shadow: 3px 3px 2px black;
+}
+
+.buttons a:hover {
+  background-color: rgb(34, 34, 34);
+}
+
+.image-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  
+}
+
+.image-box {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  box-shadow: 3px 3px 2px black;
+}
+
+.image-box:hover {
+  transform: translateY(-10px);
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
