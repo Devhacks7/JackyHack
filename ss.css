@@ -98,7 +98,8 @@ p {
     display: none;
     margin-top: 20px;
     padding: 10px;
-    background-color: #f9f9f9;
+    color: white;
+    background-color: rgb(34, 34, 34);;
     border-radius: 5px;
     border: 1px solid #ddd;
 }
